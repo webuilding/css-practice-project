@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    letter-spacing: -0.02em;
+    background-color: black;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #1f2d3d;
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #afb3b9
+}
+
+p {
+    font-size: 15px;
+    color: #79818b
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 20px;
+    background-color: #fff;
+    max-width: 550px;
+}
+
+.card-user {
+   
+   width: 44px;
+   height: 44px;
+   border-radius: 50%;
+   margin-right: 20px;
+}
+
+.card-content h1 {
+    margin-bottom: 4px;
+}
+
+.card-content h2 {
+    margin-bottom: 12px;
+}

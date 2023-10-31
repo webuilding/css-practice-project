@@ -1,0 +1,145 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.sr-only {
+    display: absolute;
+    width: 1px;
+    height: 1px;
+    z-index: -100%;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.card {
+    display: flex;
+    width: 840px;
+    padding: 24px;
+}
+
+.card-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    background-image: url(./assets/img-house.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 6px;
+    margin-right: 24px;
+}
+
+.card-image.vertical img {
+    width: 100%;
+    height: auto;
+}
+
+.card-image.horizontal img {
+    width: auto;
+    height: 100%;
+}
+ 
+.like-button {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 36px;
+    height: 36px;
+    padding: 6px 6px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    background-image: url(./assets/icon-favorite.svg);
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: 24px 24px;
+    cursor: pointer;
+}               
+
+.plus-badge {
+    display: inline-block;
+    padding: 1px 8px;
+    margin-right: 6px;
+    border-radius: 4px;
+    background-color: #92174D;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.4285714286;
+    color: #fff;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 9px;
+}
+
+.property-type span {
+    color: #7D858F;
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.property-rate::before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    background-image: url(./assets/icon-star.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.property-rate strong {
+    color: #151B26;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.property-rate span {
+    color:#7D858F;
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.card-title h1 {
+    color: #151B26;
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.property-detail {
+    color: #7D858F;
+    font-size: 14px;
+    line-height: 1.1428571429;
+}
+
+.property-detail dd span::after {
+    content: '·';
+    margin: 0 3px;
+}
+
+.property-detail dd span:last-child::after {
+    content: '';
+    margin: 0;
+}
+
+.property-detail div:first-child {
+    margin-bottom: 8px;
+}
